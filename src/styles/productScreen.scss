@@ -1,0 +1,50 @@
+.productScreen__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    > button {
+      
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 10px;
+      font-size: 18px;
+      margin-left: 15px;
+      font-family: Dosis;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  
+    > div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      
+      color: #fff;
+      padding: 20px;
+      margin-top: 40px;
+  
+      > img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+      }
+  
+      > div {
+        margin-top: 20px;
+
+        >button{
+            padding: 7px;
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 10px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+      }
+    }
+  }
+  
+  

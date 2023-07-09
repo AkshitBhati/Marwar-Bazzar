@@ -1,0 +1,32 @@
+.category__wrapper{
+    display: flex;
+}
+.product__container{
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    width: 30%;
+    margin: auto;
+    display: flex;
+    >img{
+        height: 150px;
+        width: 200px;
+    }
+    >div{
+        display: flex;
+        flex-direction: column;
+        
+        text-align: center;
+        color: #fff;
+        margin-left: 30px;
+        >h3{
+            color: #fff;
+            margin-top: 10px;
+        }
+        >button{
+            padding: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+}

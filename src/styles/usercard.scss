@@ -1,0 +1,27 @@
+.card__wrapper{
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 50px;
+    >img{
+        height: 100px;
+    }
+    >h2{
+        color: #fff;
+        font-family: Dosis;
+        margin-bottom: 15px;
+    }
+    >button{
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}

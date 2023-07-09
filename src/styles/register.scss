@@ -1,0 +1,45 @@
+.register__wrapper{
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 80px;
+    border-radius:20px ;
+    background-color: #e7e5e5;
+}
+.register__name, .register__email, .register__password, .register__confPassword{
+    width: 80%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: popins;
+}
+.register__error{
+    margin-left: 20x;
+    font-weight: 600;
+    color: red;
+}
+.register__btn{
+    margin-top:20px ;
+    width: 83%;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    margin-left: 20px;
+    font-family: Dosis;
+    font-weight: 600;
+}
+span{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width:700px){
+    .register__wrapper{
+        width: 80%;
+    }
+}
