@@ -25,6 +25,7 @@ import "./styles/cart.scss"
 import "./styles/productScreen.scss"
 import "./styles/homeCategory.scss"
 import "./styles/usercard.scss"
+import "./styles/cartTotal.scss"
 
 
 const App = () => {

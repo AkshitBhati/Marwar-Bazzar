@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { drag, remove } from '../redux/cartSlice'
 import { toast } from 'react-hot-toast'
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+import CartTotal from '../components/CartTotal';
 
 
 const Cart = () => {
@@ -26,6 +27,7 @@ const Cart = () => {
   };
 
   return (
+    <div className='cart__wrapper'>
     <DragDropContext onDragEnd={handleDragEnd}>
       <Droppable droppableId="cartItems">
         {(provided) => (
@@ -59,6 +61,8 @@ const Cart = () => {
         )}
       </Droppable>
     </DragDropContext>
+    <CartTotal />
+        </div>
   );
 };
 

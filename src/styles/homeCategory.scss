@@ -14,7 +14,6 @@
     >div{
         display: flex;
         flex-direction: column;
-        
         text-align: center;
         color: #fff;
         margin-left: 30px;
@@ -28,5 +27,39 @@
             cursor: pointer;
             font-family: 'Courier New', Courier, monospace;
         }
+    }
+}
+
+@media screen and (max-width:800px){
+    .category__wrapper{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .product__container{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        text-align: center;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+        >img{
+            margin: auto;
+        }
+        >div{
+            align-items: center;
+            h3{
+                margin-right: 20px;
+            }
+            >h4{
+                margin-right: 35px;
+            }
+
+            >button{
+                margin-bottom: 10px;
+            }
+        }
+        
     }
 }

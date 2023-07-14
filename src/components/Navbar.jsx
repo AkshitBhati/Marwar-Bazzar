@@ -35,10 +35,13 @@ const Navbar = ({ name }) => {
             <h3 onClick={() => navigate("/products")}>Products</h3>
           </div>
           <div className="nav__feature">
+            <div>
+
             <Link to="/cart">
               <BsCart2 className="logo" />
             </Link>
             <span className="cart__length">{cart.length}</span>
+            </div>
             <button onClick={handleNameClick}>
               {userName ? userName : "Login"}
             </button>
