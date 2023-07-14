@@ -27,7 +27,7 @@ const Cart = () => {
   };
 
   return (
-    <div className='cart__wrapper'>
+    
     <DragDropContext onDragEnd={handleDragEnd}>
       <Droppable droppableId="cartItems">
         {(provided) => (
@@ -61,8 +61,7 @@ const Cart = () => {
         )}
       </Droppable>
     </DragDropContext>
-    <CartTotal />
-        </div>
+
   );
 };
 
