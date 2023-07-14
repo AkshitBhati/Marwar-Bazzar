@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import  { useSelector } from "react-redux"
 
 
@@ -6,10 +6,16 @@ const CartTotal = () => {
     const [price, setPrice] = useState([])
 
     const cartTotal = useSelector((state) => state.cart)
+   
+
+   useEffect(() => {
     cartTotal.map((total) => {
-        
-        
-    })
+      const totalPrice = parseFloat(total.price)
+      setPrice(totalPrice)
+     })
+   }, [cartTotal])
+    console.log(typeof(price))
+
   return (
     <div className='cartTotal__wrapper'>
       <h2>Cart Total</h2>
@@ -20,7 +26,7 @@ const CartTotal = () => {
         </div>
         <div>
           <p>100</p>
-          <h3>800</h3>
+          <h3>{(price) + 100}</h3>
         </div>
       </div>
       <button>Checkout</button>
